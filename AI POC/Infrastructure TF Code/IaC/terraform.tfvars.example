@@ -1,0 +1,37 @@
+# GCP Project Configuration
+
+project_id = "your-gcp-project-id"
+
+
+# GCS Bucket Configuration
+
+name   = "your-gcs-bucket-name"
+region = "us-east1"
+
+
+# API Services to Enable
+
+api_services = [
+  "compute.googleapis.com",
+  "iam.googleapis.com",
+  "storage.googleapis.com",
+  "bigquery.googleapis.com"
+]
+
+
+# Service Account Configuration
+
+service_account_roles_map = {
+  "sa-1@your-project.iam.gserviceaccount.com" = ["roles/storage.admin", "roles/storage.objectViewer"]
+  "sa-2@your-project.iam.gserviceaccount.com" = ["roles/bigquery.admin", "roles/logging.viewer"]
+}
+
+
+
+# User IAM Configuration
+
+user_roles_map = {
+  "user1@example.com" = ["roles/storage.admin", "roles/viewer"]
+  "user2@example.com" = ["roles/editor"]
+  "user3@example.com" = ["roles/iam.admin", "roles/logging.viewer"]
+}
