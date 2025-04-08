@@ -15,7 +15,7 @@ This Proof of Concept (POC) leverages **Google Cloud Platform** services to proc
 
 ---
 
-## Architecture Overview
+## Flow Overview
 
 ### 1. Cloud Run Function: `list-and-copy-drive-files`
 
